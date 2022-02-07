@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phising Detection</title>
+    <!--BS5 css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link  rel="stylesheet" href="public/stylesheets/style.css"/>
+</head>
+<body class="f-height">
+    <section class="bg-wrapper">
+        <img src="public/images/stars.png" id="stars">
+        <img src="public/images/mountains_behind.png" id="behind">
+        <img src="public/images/mountains_front.png" id="front">
+        <img src="public/images/moon.png" id="moon">
+    </section>
+    <div class="main">
+        <div class="container-fluid content center">
+
+            <div class="content-wrapper max-width-1 height-60">
+                <h1 class="mt-5 d-flex justify-content-center align-content-center">Phishing Url Detection</h1>
+                <div class="input-group mb-3 mt-5">
+                    <label class="input-group-text" for="type">Options</label>
+                    <select name="type" class="form-select" id="type">
+                      <option value = "1" selected>Random Forest</option>
+                      <option value="2">Linear Regression</option>
+                      <option value="3">Support Vector Machine</option>
+                    </select>
+                  </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Input URL</span>
+                    <input type="text" name="url" id="url" class="form-control" placeholder="Enter URL" aria-label="URL" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-group justify-content-between d-flex gap-3">
+                    <a href="/multi" class="btn btn-outline-success">Multi URLs</a>
+
+                    
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-info" id="clear">Clear</button>
+                        <button class="btn btn-danger" id="submit">Submit</button>
+                    </div>
+                </div>
+
+                <div class="result">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="public/js/main.js">
+
+    </script>
+</body>
+</html>
